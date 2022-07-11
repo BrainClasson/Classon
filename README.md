@@ -1,2 +1,0 @@
-# Classon
-Classon project repository
