@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* the body css starts here */
+body {
+    height: 1052px;
+    /* width: 2370px; */
+    /* left: -666px; */
+    /* top: -15px; */
+    border-radius: 0px;
+    background-image: url(../desktop-1/images/Rectangle-1.png), url(../desktop-1/images/DESKTOP-1.png);
+    background-color: white; /* incase the image is not availble */
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.sign-up button, .sign-in button {
+    background-color: #0012B4;
+    border-radius: 20px;
+    padding: 26px;
+    border-style: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: block;
+    margin: 0 auto;
+    margin-top: 300px;
+}
+
+.sign-in button {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+.sign-up button:hover, 
+.sign-in button:hover {
+    opacity: 0.9;
+    transition: 0.1s
+}

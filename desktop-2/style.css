@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* the body css starts here */
+body {
+    height: 1052px;
+    /* width: 2370px; */
+    /* left: -666px; */
+    /* top: -15px; */
+    border-radius: 0px;
+    background-image: url(../desktop-2/images/DESKTOP-2.png);
+    background-color: black; /* incase the image is not availble */
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+span {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+
+label {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+form {
+    border: 1px solid transparent;
+    display: block;
+    color: white;
+    width: 25%;
+    padding: 150px;
+}
+
+input[type='email'],
+input[type='password'] {
+    display: block;
+    padding: 15px;
+    /* width: 375px; */
+    width: 100%;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* :placeholder {
+    color: #0012B4;
+    opacity: 1;
+} */
+
+/* input[type='email']:focus + label,
+input[type='email']:focus + label {
+    color: #0012b4;
+} */
+
+.btn button {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 16px 40px;
+    border-style: none;
+    margin-top: 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* .btn button:focus, a:hover {
+    background-color: #0012B4;
+    color: white;
+} */
+
+/* button:hover {
+    /* opacity: 0.8;
+    transition: 0.1s 
+   
+}
+
+button a:hover {
+    
+} */
+
+.btn a {
+    text-decoration: none;
+    color: #0012B4;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.existing_acc a { 
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 60px;
+    top: 80;
+}
+
+.existing_acc {
+    margin-top: 100px;
+}
+
+/* .existing_acc a:hover {
+    color: #0012B4;
+} */
