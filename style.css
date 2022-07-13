@@ -5,10 +5,7 @@
 
 /* the body css starts here */
 body {
-    height: 1052px;
-    /* width: 2370px; */
-    /* left: -666px; */
-    /* top: -15px; */
+    height: 1061px;
     border-radius: 0px;
     background-image: url(./images/Rectangle-1.png), url(./images/DESKTOP-1.png);
     background-color: white; /* incase the image is not availble */
@@ -23,46 +20,136 @@ body {
     margin-top: 100px;
 }
 
-.sign-up button, .sign-in button {
-    background-color: #0012B4;
-    border-radius: 20px;
-    padding: 26px;
-    border-color: transparent;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.sign-up a {
     display: block;
     margin: 0 auto;
-    margin-top: 300px;
-}
-
-.sign-in button {
-    margin-top: 50px;
-    background-color: transparent;
-}
-
-.sign-up a {
+    width: 15%;
+    height: 50px;
+    line-height: 46px;
     text-decoration: none;
-    color: white;
+    text-align: center;
+    border-radius: 20px;
     font-size: 40px;
-    font-weight: 400;
-    padding: 30px;
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease;
+    padding: 20px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #284ab8;
+    margin-top: 240px;
 }
 
 .sign-in a {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 50px;
+    line-height: 46px;
     text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid #284ab8;
+    color: #284ab8;
+    font-size: 40px;
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    transition: all .35s ease;
+    padding: 20px;
+    margin-top: 50px;
+}
+  
+.sign-up a:before, .sign-in a:before,
+.sign-up a:before, .sign-in a:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    /* background: white; */
+    z-index: -1;
+    transition: all .35s ease;
+}
+  
+.sign-up a ::before, .sign-in a:before{
+    opacity: .5;
+}
+  
+.sign-up a::after, .sign-in a:after{
+    transition-delay: .2s;
+}
+  
+.sign-in a:hover{
+    border-color: #595959;
+    color: #595959;
+}
+
+.sign-up a:hover {
+    background-color: #595959;
+}
+  
+.sign-up a:hover::before, .sign-in a:hover:before,
+.sign-up a:hover::after, .sign-in a:hover:after{
+    top: 0;
+}
+
+/* .sign-in {
+    transition: all .5s ease-in;
+    border: 3px solid #284AB8;
+    background-color : transparent;
+    padding: 10px;
+    border-radius: 4px;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    
+}
+
+.sign-in a {
     color: #284AB8;
+    line-height: 1;
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
     font-size: 40px;
     font-weight: 400;
-    padding: 30px;
+    border-style: none;
 }
 
-.sign-in button:hover {
-    border-width: 2px;
-    border-color: #596486;
+.sign-in:hover, a:hover{
     color: #596486;
+    border-color: #596486;
+    background-color: #fff;
 }
 
+.sign-up, .sign-in {
+    border-radius: 20px;
+    padding: 26px;
+    display: block;
+    margin: 0 auto;
+} */
+
+/* .sign-in button {
+    margin-top: 50px;
+    background-color: transparent;
+} */
+
+/* .sign-in a {
+    text-decoration: none;
+    color: #284AB8;
+    
+    padding: 30px;
+} */
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
 
 .sitting img{
     position: absolute;
@@ -91,7 +178,7 @@ body {
 .superman img {
     position: absolute;
     left: 65%;
-    top: 119%;
+    top: 121%;
 }
 
 .lying img {
@@ -104,10 +191,4 @@ body {
     position: absolute;
     left: 85%;
     top: 105%;
-}
-
-img {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
