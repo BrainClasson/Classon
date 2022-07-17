@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+figcaption {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #284ab8;
+    width: 10%;
+    overflow: hidden;
+    clear: both;
+    float: left;
+}
+
+.container1 > span {
+    margin-top: 100px;
+    text-transform: uppercase;
+    color: #284ab8;
+    text-align: center;
+}
+
+.container1 > .nav-icon > :nth-child(1) {
+    margin-top: 30px;
+}
+
+.container1 > .nav-icon > figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.container1 >  .nav-icon > figure > figcaption {
+    font-size: 16px;
+    color: #284ab8;
+}
+
+.container > .container1 > .nav-icon > figure > a > img:hover {
+    width: 110%;
+}
+
+.container2 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center; 
+    /* border: 1px solid black; */
+    width: 50%;
+    padding: 30px;
+    margin: 20px;
+}
+
+.container2 > .class-sect {
+    /* border: 1px solid black; */
+    padding: 50px;
+    /* margin: 20px; */
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.container2 > .class-sect > span {
+    padding: 15px;
+    /* font-family: 'Commissioner'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 12px;
+}
+
+.container2 > .class-sect > span > a {
+    color: black;
+}
+
+.container2 > .class-sect > span > a:hover {
+    font-size: 21px;
+    font-weight: 500;
+    color: #284ab8;
+}
+
+.container2 > .subject-tab {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    padding: 10px;
+}
+
+.container2 > .subject-tab > figure > figcaption {
+    padding-top: 10px;
+    color: #284ab8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container2 > .test-exam-tab {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    padding: 10px;
+}
+
+.container2 > .report-tab {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-left: -15px;
+    padding: 10px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+    border: 1px solid black;
+    width: 35%;
+}
