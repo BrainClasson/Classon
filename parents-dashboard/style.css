@@ -217,6 +217,7 @@ body {
     /* padding-top: 160px; */
     display: flex;
     justify-content: space-between;
+    padding-top: 45px;
 }
 
 .container3 > .top-nav > .edit-btn-1 > a {
