@@ -201,7 +201,7 @@ body {
     justify-content: space-between;
     float: right;
     /* border: 1px solid black; */
-    width: 36%;
+    width: 34%;
     /* height: 1100px; */
     padding: 40px;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
@@ -265,10 +265,6 @@ body {
 .container3 > .profile-head > .user-class {
     font-weight: 400;
     font-size: 16px;
-}
-
-.container3 > .usage-record {
-    /* margin-top: 1.25rem; */
 }
 
 table {
