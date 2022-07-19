@@ -109,6 +109,7 @@ body {
 
 .container2 > .class-sect > span > a {
     color: black;
+    word-break: keep-all;
 }
 
 .container2 > .class-sect > span > a:hover {
