@@ -1,7 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+button {
+ cursor: pointer;
 }
 
 figcaption {
@@ -15,6 +20,9 @@ a {
 
 body {
     background-color: white;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .container1 {
@@ -37,6 +45,8 @@ body {
     text-transform: uppercase;
     color: #284ab8;
     text-align: center;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .container1 > .nav-icon > :nth-child(1) {
@@ -93,7 +103,7 @@ body {
     /* font-family: 'Commissioner'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 24px;
     line-height: 12px;
 }
 
@@ -102,7 +112,7 @@ body {
 }
 
 .container2 > .class-sect > span > a:hover {
-    font-size: 21px;
+    font-size: 26px;
     font-weight: 500;
     color: #284ab8;
 }
@@ -188,29 +198,30 @@ body {
 .container3 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     float: right;
-    border: 1px solid black;
-    width: 35%;
-    height: 1100px;
+    /* border: 1px solid black; */
+    width: 36%;
+    /* height: 1100px; */
+    padding: 40px;
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
 }
 
 .container3 > .top-nav {
     border: 1px solid transparent;
-    padding: 30px;
-    margin-bottom: 350px;
+    /* padding-bottom: -60px; */
+    /* padding-top: 160px; */
     display: flex;
     justify-content: space-between;
 }
 
-.container3 > .top-nav > span:nth-child(1) {
+.container3 > .top-nav > .edit-btn-1 > a {
     font-weight: 400;
     font-size: 24px;
     color: #284ab8;
-    margin-left: 100px;
 }
 
-.container3 > .top-nav > .edit-btn > a {
+.container3 > .top-nav > .edit-btn-2 > a {
     font-weight: 400;
     font-size: 16px;
     background-color: #284ab8;
@@ -219,8 +230,67 @@ body {
     padding: 17px;
 }
 
+.container3 > .profile-head {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
 .container3 > .profile-head > img {
-    position: absolute;
-    bottom: 65%;
-    right: 150px;
+    /* position: absolute;
+    bottom: 62%;
+    right: 150px; */
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.container3 > .profile-head > .user-name,
+.container3 > .profile-head > .user-class {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container3 > .profile-head > .user-name {
+    font-weight: 400;
+    font-size: 20px;
+    /* padding-top: 30px; */
+}
+
+.container3 > .profile-head > .user-class {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container3 > .usage-record {
+    /* margin-top: 1.25rem; */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+}
+.bold {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+td:nth-child(2) {
+    border-right: none;
+}
+
+.container3 > .date-picker {
+    padding-top: 20px;
 }
