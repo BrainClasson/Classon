@@ -64,6 +64,7 @@ body {
 .container1 >  .nav-icon > figure > figcaption {
     font-size: 16px;
     color: #284ab8;
+    padding-top: 5px;
 }
 
 .container > .container1 > .nav-icon > figure > a > img {
@@ -71,8 +72,11 @@ body {
 }
 
 .container > .container1 > .nav-icon > figure > a > img:hover {
-    width: 110%;
-    
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .container2 {
@@ -120,6 +124,7 @@ body {
     font-size: 24px;
     font-weight: 500;
     color: #284ab8;
+    /* transform: scale(1.2); */
 }
 
 .container2 > .subject-tab {
@@ -146,7 +151,8 @@ body {
 
 .container2 > .subject-tab > figure:hover {
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
-    padding: 15px;
+    /*padding: 15px;
+    */transform: scale(0.95);
 }
 
 .container2 > .test-exam-tab {
@@ -226,6 +232,10 @@ body {
     color: #284ab8;
 }
 
+.container3 > .top-nav > .edit-btn-1 > a:hover   {
+    font-size: 26px;
+}
+
 .container3 > .top-nav > .edit-btn-2 > a {
     font-weight: 400;
     font-size: 16px;
@@ -233,6 +243,10 @@ body {
     color: white;
     border-radius: 8px;
     padding: 17px;
+}
+
+.container3 > .top-nav > .edit-btn-2:hover {
+    transform: scale(1.2);
 }
 
 .container3 > .profile-head {
@@ -252,6 +266,10 @@ body {
     display: block;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+
+.container3 > .profile-head > img:hover {
+    transform: scale(1.2);
 }
 
 .container3 > .profile-head > .user-name,
