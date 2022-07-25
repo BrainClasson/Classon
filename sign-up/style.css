@@ -6,12 +6,9 @@
 /* the body css starts here */
 body {
     height: 1052px;
-    /* width: 2370px; */
-    /* left: -666px; */
-    /* top: -15px; */
     border-radius: 0px;
     background-image: url(../sign-up/images/DESKTOP-2.png);
-    background-color: black; /* incase the image is not availble */
+    background-color: black; /* incase the image is not available */
     background-position: center;
     background-repeat: no-repeat no-repeat;
     background-size: cover;
@@ -49,7 +46,6 @@ input[type='email'],
 input[type='password'] {
     display: block;
     padding: 10px;
-    /* width: 375px; */
     width: 100%;
     border-radius: 20px;
     box-sizing: border-box;
@@ -64,47 +60,6 @@ input[type=email]:focus,
 input[type=password]:focus {
     border: 3px solid #284ab8;
 }
-
-
-/* input[type='email']:active + label,
-input[type='password']:active + label {
-    color: #0012b4;
-}  */
-
-/* .btn button {
-    display: block;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 20px;
-    padding: 16px 40px;
-    border-style: none;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .btn button:focus, a:hover {
-    background-color: #0012B4;
-    color: white;
-} */
-
-/* button:hover {
-    /* opacity: 0.8;
-    transition: 0.1s 
-   
-}
-
-button a:hover {
-    
-} */
-
-/* .btn a {
-    text-decoration: none;
-    color: #0012B4;
-    font-size: 40px;
-    font-weight: 400;
-} */
 
 .btn a {
     display: block;
@@ -135,7 +90,6 @@ button a:hover {
     height: 100%;
     top: -100%;
     left: 0;
-    /* background: white; */
     z-index: -1;
     transition: all .35s ease;
 }
@@ -149,8 +103,10 @@ button a:hover {
 }
 
 .btn a:hover {
-    border: 3px solid #596486;
-    color: #596486;
+    border: 3px solid #284ab8;
+    color: white;
+    background-color: #284ab8;
+    box-shadow:-300px 0 0 0 #284ab8 inset;
 }
   
 .btn a:hover:before,
@@ -172,6 +128,6 @@ button a:hover {
 }
 
 .existing_acc a:hover {
-    color: #596486;
+    color: #284ab8;
     transition: all .35s ease;
 }
