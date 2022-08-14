@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+   cursor: pointer;
+  }
+  
+  figcaption {
+      text-align: center;
+  }
+  
+  a {
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  body {
+      background-color: white;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0 auto;
+      /* overflow-x: hidden; */
+  }
+
+/* body > img {
+    height: 1005px;
+    width: 90%;
+    float: right;
+}
+   */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #284ab8;
+    width: 10%;
+    overflow: hidden;
+    float: left;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  
+  .container1 > span {
+      margin-top: 40px;
+      text-transform: uppercase;
+      color: #284ab8;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .container1 > .nav-icon > :nth-child(1) {
+      margin-top: 20px;
+  }
+  
+  .container1 > .nav-icon > figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      transition: width 10s;
+  }
+  
+  .container1 >  .nav-icon > figure > figcaption {
+      font-size: 16px;
+      color: #284ab8;
+      padding-right: 10px;
+      padding-top: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img {
+    transition: width 10s;
+    padding-left: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+  .container2 {
+      display: inline-flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      /* justify-content: start; */
+      align-items: center; 
+      position: absolute;
+      margin: 50px 0px 0px 70px;
+  }
+
+  .container2 > span {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+video {
+    border: 1px solid transparent;
+    width: 94%;
+    height: 110vh;
+    margin-top: 20px;
+    margin-left: -70px;
+    padding: 0;
+}
