@@ -114,17 +114,27 @@ input[type=password]:focus {
     top: 0;
 }
 
-.existing_acc a { 
+.existing_acc p a { 
     color: white;
     text-decoration: none;
     font-size: 40px;
     font-weight: 400;
-    padding: 60px;
-    top: 80;
 }
 
 .existing_acc {
-    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    padding: 20px;
+    width: 500px;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+em {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
 }
 
 .existing_acc a:hover {

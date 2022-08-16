@@ -8,6 +8,14 @@
     <title>Classon</title>
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        function submitForm() {
+            var frm = document.getElementsByName('traceTheLetterA')[0];
+            frm.submit();
+            frm.reset();
+            return false;
+        }
+    </script>
   </head>
 
   <body>
@@ -50,38 +58,12 @@
         </div>
 
         <div class="container2">
-            <figure class="top-fig">
-                <a aria-disabled="true"><img src="./images/icons/letter-a.png" alt=""></a>
-                <figcaption>Letter A</figcaption>
-              </figure>
-            <span>Letter A</span>
-            <div class="subject-tab">
-              <figure>
-                <img src="./images/icons/video-widget.png" alt="" class="icons-right">
-                <a href="../video-playing-page/index.html"><img src="./images/icons/video.png" alt=""></a>
-                <figcaption>Video</figcaption>
-              </figure>
-              <figure>
-                <img src="./images/icons/book-widget.png" alt="" class="icons-right second-right">
-                <a href="../book/index.html"><img src="./images/icons/book.png" alt=""></a>
-                  <figcaption>Book</figcaption>
-              </figure>
-              <figure>
-                <img src="./images/icons/song-widget.png" alt="" class="icons-right third-right">
-                <a href="../song-playing-page/index.html"><img src="./images/icons/song.png" alt=""></a> 
-                <figcaption>Song</figcaption>
-              </figure>
-              <figure>
-                <img src="./images/icons/workbook-widget.png" alt="" class="icons-right fourth-right">
-                <a href="../empty-worksheet/index.html"><img src="./images/icons/workbook.png" alt=""></a>
-                <figcaption>Workbook</figcaption>
-              </figure>
-              <figure>
-                <img src="./images/icons/workbook-widget.png" alt="" class="icons-right fourth-right">
-                <a href="../worksheet/index.html"><img src="./images/icons/workbook.png" alt=""></a>
-                <figcaption>Worksheet</figcaption>
-              </figure>
-              </div>
+            
+            <form name="traceTheLetterA">
+                <textarea id="letter-a" cols="30" rows="10" maxlength="25"></textarea>
+                <label for="letter-a">Trace the letter A</label>
+                <a href="#" type="button" value="Submit" id="btnsubmit" onclick="submitForm()">Submit</a>
+            </form>
         </div>
     </div>
   </body>

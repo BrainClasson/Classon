@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+   cursor: pointer;
+  }
+  
+  figcaption {
+      text-align: center;
+  }
+  
+  a {
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  body {
+      background-color: white;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0 auto;
+      overflow-x: hidden;
+  }
+
+body > img {
+    height: 1157px;
+    width: 90%;
+    float: right;
+}
+  
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #284ab8;
+    width: 10%;
+    overflow: hidden;
+    float: left;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  
+  .container1 > span {
+      margin-top: 40px;
+      text-transform: uppercase;
+      color: #284ab8;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .container1 > .nav-icon > :nth-child(1) {
+      margin-top: 20px;
+  }
+  
+  .container1 > .nav-icon > figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      transition: width 10s;
+  }
+  
+  .container1 >  .nav-icon > figure > figcaption {
+      font-size: 16px;
+      color: #284ab8;
+      /* padding-right: 10px; */
+      padding-top: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img {
+    transition: width 10s;
+    padding-left: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+  .container2 {
+      display: inline-flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      /* justify-content: start; */
+      align-items: center; 
+      position: absolute;
+      /* margin: 50px 0px 0px 70px; */
+  }
+
+  textarea {
+    /* position: absolute; */
+    width: 1000px;
+    height: 1080px;
+    background: #FFFFFF;
+    resize: none;
+    margin-left: 90px;
+    margin-top: 60px;
+    border: none;
+    padding: 90px;
+    font-size: 130px;
+    overflow: hidden;
+    letter-spacing: 80px;
+  }
+
+  label {
+    position: absolute;
+    pointer-events: none;
+    top: 100px;
+    transition: 1.2s ease all;
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    left: 45%;
+  }
+
+  textarea:focus ~ label{
+    top: 80px;
+    font: size 20px;
+    opacity: 1; 
+      margin-left: 45px;  
+      transition: all 1.5s ease-out;   
+  }
+
+form >a {
+    position: absolute;
+    right: 39%;
+    bottom: 2%
+}
+
+form > a {
+    width: 18%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: arial;
+    overflow: hidden;
+    transition: all .35s ease;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #284ab8;
+}
+
+form > a:hover {
+    color: #284ab8;
+    border: 3px solid #284ab8;
+    background-color: white;
+    box-shadow:-300px 0 0 0 white inset;
+}

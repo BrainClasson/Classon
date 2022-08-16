@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+   cursor: pointer;
+  }
+  
+  figcaption {
+      text-align: center;
+  }
+  
+  a {
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  body {
+      background-color: white;
+      -webkit-font-smoothing: antialiased;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 0 auto;
+      overflow-x: hidden;
+  }
+
+body > img {
+    height: 1157px;
+    width: 90%;
+    float: right;
+}
+  
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #284ab8;
+    width: 10%;
+    overflow: hidden;
+    float: left;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  
+  .container1 > span {
+      margin-top: 40px;
+      text-transform: uppercase;
+      color: #284ab8;
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .container1 > .nav-icon > :nth-child(1) {
+      margin-top: 20px;
+  }
+  
+  .container1 > .nav-icon > figure {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      transition: width 10s;
+  }
+  
+  .container1 >  .nav-icon > figure > figcaption {
+      font-size: 16px;
+      color: #284ab8;
+      /* padding-right: 10px; */
+      padding-top: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img {
+    transition: width 10s;
+    padding-left: 10px;
+  }
+  
+  .container > .container1 > .nav-icon > figure > a > img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+  .container2 {
+      display: inline-flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      /* justify-content: start; */
+      align-items: center; 
+      position: absolute;
+      margin: 50px 0px 0px 70px;
+  }
+
+  .container2 > span {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+video {
+    border: 1px solid transparent;
+    width: 94%;
+    height: 110vh;
+    margin-top: 20px;
+    margin-left: -70px;
+    padding: 0;
+}
+
+.book-section{
+    width: 320%;
+    height: 100vh;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    /* overflow: hidden; */
+}
+.book-section > .container3{
+    height: 132vh;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2%;
+    margin-top: 70px;
+    margin-left: 50px;
+    perspective: 1200px;
+    overflow: hidden;
+}
+.container3 > .right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    transform-style: preserve-3d;
+}
+.book-section > .container3 > .right{
+    right:0;
+    transform-origin: left;
+    border-radius: 10px 0 0 10px;
+}
+.right > figure.front, .right > figure.back{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-color: white;
+    overflow: hidden;
+}
+.right > figure.front{
+    background-position: right;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.2);
+}
+.right > figure.back{
+    background-position: left;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 2px 15px -2px rgba(0,0,0,0.2);
+    transform: rotateY(180deg);
+}
+.flip{
+    transform: rotateY(-180deg);
+}
+.flip::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(0,0,0,0.1);
+}
+.book-section > button{
+    border: 2px solid #284ab8;
+    background-color: transparent;
+    color: #284ab8;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: -350px;
+    transition: 0.3s ease-in-out;
+}
+.book-section > button:focus, .book-section > button:active{
+    outline: none;
+}
+.book-section > p{
+    color: rgba(0,0,0,0.7);
+    font-family: calibri;
+    font-size: 24px;
+}
+.book-section > p > a{
+    text-decoration: none;
+    color: #284ab8;
+}
+.book-section > button:hover{
+    background-color: #284ab8;
+    color: #fff;
+}
+.front#cover, .back#back-cover{
+    /* background-image: url(./books/letter-a.png); */
+    width: 100%;
+    height: 100%;
+}
+.front#cover h1{
+    color: #fff;
+}
+.front#cover p{
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+}
+

@@ -93,7 +93,7 @@ body > img {
       justify-content: start;
       align-items: center; 
       position: absolute;
-      margin: 350px 0px 0px 220px;
+      margin: 350px 0px 0px 120px;
   }
 
   .container2 > span {
@@ -171,10 +171,12 @@ body > img {
     -o-border-radius: 8px;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
     margin: 15px;
+    cursor: default;
 }
 
 .top-fig > a > img {
     border-radius: 8px;
+    cursor: default;
 }
 
 .top-fig > figcaption {
@@ -185,10 +187,10 @@ body > img {
     font-weight: 400;
 }
 
-.top-fig:hover {
+/* .top-fig:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
-}
+} */
